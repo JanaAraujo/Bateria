@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(77, 5, 88);
+  font-family: 'Jura', sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.key {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(198, 45, 245);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.key.active {
+  border: 2px solid #ff0;
+  color: #ff0;
+}
+
+.composer {
+  width: 260px;
+  margin-top: 20px;
+}
+.composer #input {
+  width: 100%;
+  outline: none;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.composer button {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+
+  cursor: pointer;
+}
+.composer button:hover {
+  background-color: rgba(73, 57, 73, 0.164);
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
